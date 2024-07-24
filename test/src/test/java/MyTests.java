@@ -2,6 +2,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import ponomareva.Task1;
 import ponomareva.Task2;
+import ponomareva.Task3;
 
 public class MyTests {
     @Test
@@ -29,5 +30,13 @@ public class MyTests {
     void task2(){
         int[] array = {1, 2, 3, 3, 3, 4, 5, 5, 5, 7, 8, 7, 8, 7, 8};
         Task2.run(array);
+    }
+
+    @Test
+    void task3(){
+        int n = 1000;
+        String sequence1 = "122";
+        String sequence2 = "251";
+        Task3.run(n, sequence1, sequence2);
     }
 }
