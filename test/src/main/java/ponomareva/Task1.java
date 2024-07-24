@@ -6,10 +6,10 @@ import java.util.Random;
 public class Task1 {
     public static void run(int[] array){
         fillArray(array);
-        System.out.println(Arrays.toString(array));
+        System.out.println("Start array: " + Arrays.toString(array));
 
         sortArray(array);
-        System.out.println(Arrays.toString(array));
+        System.out.println("Sorted array: " + Arrays.toString(array));
     }
 
     private static void fillArray(int[] array){

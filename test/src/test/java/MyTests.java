@@ -1,6 +1,7 @@
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import ponomareva.Task1;
+import ponomareva.Task2;
 
 public class MyTests {
     @Test
@@ -22,5 +23,11 @@ public class MyTests {
             assertTrue(array[i] >= array[i + 1]);
             ++i;
         }
+    }
+
+    @Test
+    void task2(){
+        int[] array = {1, 2, 3, 3, 3, 4, 5, 5, 5, 7, 8, 7, 8, 7, 8};
+        Task2.run(array);
     }
 }
