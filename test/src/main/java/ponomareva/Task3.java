@@ -10,13 +10,13 @@ public class Task3 {
 
         for(int i = 0; i < COUNT_RANDOM_SEQUENCES; ++i){
             String cur_sequence = generateRandomSequence(n);
-            int count_seq_1 = countOccurrences(cur_sequence, sequence_1);
-            int count_seq_2 = countOccurrences(cur_sequence, sequence_2);
+            int count_occ_seq_1 = countOccurrences(cur_sequence, sequence_1);
+            int count_occ_seq_2 = countOccurrences(cur_sequence, sequence_2);
 
-            if(count_seq_1 > count_seq_2){
+            if(count_occ_seq_1 > count_occ_seq_2){
                 ++count_win_1;
             }
-            else if (count_seq_1 < count_seq_2) {
+            else if (count_occ_seq_1 < count_occ_seq_2) {
                 ++count_win_2;
             }
             else{
