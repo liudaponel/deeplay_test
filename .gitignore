@@ -1,6 +1,3 @@
 /test/.gradle/
 /test/.idea/
 /test/build/
-/test/gradle/
-/test/gradle/wrapper/gradle-wrapper.jar
-/test/gradle/wrapper/gradle-wrapper.properties
