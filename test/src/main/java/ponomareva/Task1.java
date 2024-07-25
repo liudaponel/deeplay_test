@@ -4,6 +4,12 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class Task1 {
+    /**
+     * Заполнение массива случайными числами и
+     * сортировка. В итоговом массиве сначала нечетные числа, расположенные по не убыванию,
+     * затем нули и четные числа, расположенные по не возрастанию.
+     * @param array массив, который нужно заполнить и отсортировать
+     * **/
     public static void run(int[] array){
         fillArray(array);
         System.out.println("Start array: " + Arrays.toString(array));
@@ -12,6 +18,9 @@ public class Task1 {
         System.out.println("Sorted array: " + Arrays.toString(array));
     }
 
+    /**
+     * Заполнение массива случайными числами
+     * **/
     private static void fillArray(int[] array){
         Random random = new Random();
 
@@ -20,6 +29,10 @@ public class Task1 {
         }
     }
 
+    /**
+     * Сортирцет массив. В итоговом массиве сначала нечетные числа, расположенные по не убыванию,
+     * затем нули и четные числа, расположенные по не возрастанию.
+     * **/
     private static void sortArray(int[] array){
         int n = array.length;
         int end_odd = 0;

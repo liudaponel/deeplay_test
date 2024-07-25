@@ -1,10 +1,15 @@
 package ponomareva;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Task2 {
+    /**
+     * Поиск элементов массива, максимальных по включению.
+     * @param array массив, в котором нужно найти максимальные по включению элементы
+     * **/
     public static void run(int[] array){
         HashMap<Integer, Integer> frequencies = new HashMap<>();
 
@@ -31,7 +36,7 @@ public class Task2 {
             }
         }
 
-        System.out.println("Maximum inclusion of an element in the array = " + max);
-        System.out.println("This is " + result);
+        System.out.println("Start values: " + Arrays.toString(array));
+        System.out.println("Maximum inclusion of an element in the array = " + max + " : " + result);
     }
 }

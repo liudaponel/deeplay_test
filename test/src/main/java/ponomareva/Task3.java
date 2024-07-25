@@ -3,6 +3,13 @@ package ponomareva;
 import java.util.Random;
 
 public class Task3 {
+    /**
+     * ѕодсчет веро€тности выигрыша первого игрока,
+     * второго игрока или ничьей. »спользуетс€ метод ћонте- арло.
+     * @param n  оличество бросков в игре
+     * @param sequence_1 ѕоследовательность из 3 чисел первого игрока
+     * @param sequence_2 ѕоследовательность из 3 чисел второго игрока
+     * **/
     public static void run(int n, String sequence_1, String sequence_2) {
         int count_win_1 = 0;
         int count_win_2 = 0;
@@ -33,6 +40,11 @@ public class Task3 {
         System.out.println("The probability of draw: " + probability_draw);
     }
 
+    /**
+     * ѕодсчет количества вхождений подстроки в строку без пересечений.
+     * @param sequence срока, в которой нужно искать вхождени€
+     * @param subSequence подстрока, вхождени€ которой нужно найти
+     * **/
     private static int countOccurrences(String sequence, String subSequence){
         int fromIndex = 0;
         int count = 0;
@@ -43,6 +55,12 @@ public class Task3 {
         }
         return count;
     }
+
+    /**
+     * √енераци€ последовательности случайных чисел, принимающих значени€ от 1 до 6
+     * @param n длина последовательности
+     * @return строка с последовательностью сгенерированных чисел
+     * **/
 
     private static String generateRandomSequence(int n) {
         StringBuilder sb = new StringBuilder(n);

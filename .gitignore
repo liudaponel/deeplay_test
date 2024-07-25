@@ -2,3 +2,7 @@
 /test/.idea/
 /test/build
 /test/gradle
+/test/gradle/wrapper
+/test/gradlew
+/test/gradlew.bat
+/test/settings.gradle
